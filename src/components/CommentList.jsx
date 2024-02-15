@@ -12,7 +12,7 @@ export async function CommentList({ postId, parentCommentId = null }) {
     commentArgs.push(parentCommentId);
   }
   const comments = await db.query(commentQuery, commentArgs);
-  console.log("comments", comments.rows);
+  // console.log("comments", comments.rows);
 
   return (
     <ul className="ml-0">
